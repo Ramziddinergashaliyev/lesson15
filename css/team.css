@@ -114,4 +114,7 @@
     width: 140px;
     font-size: 12px;
   }
+  .team__text {
+    font-size: 20px;
+  }
 }

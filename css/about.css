@@ -99,16 +99,12 @@
 }
 
 @media (max-width: 550px) {
-  .card {
-    display: none;
-  }
-
   .about__title {
     font-size: 40px;
   }
 
   .about__card {
-    width: 350px;
+    width: 320px;
     padding: none;
   }
 
@@ -126,17 +122,12 @@
 }
 
 @media (max-width: 400px) {
-  .card {
-    display: none;
-  }
-
   .about__title {
     font-size: 40px;
   }
 
   .about__card {
     width: 250px;
-    padding: none;
   }
 
   .about__card__all {

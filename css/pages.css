@@ -1,0 +1,80 @@
+#pages {
+  background-color: var(--primary-color);
+}
+
+.pages__section {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.pages__vidio {
+  width: 400px;
+  padding: 90px 0px;
+}
+.pages__title {
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px;
+  text-transform: capitalize;
+}
+.pages__text {
+  color: rgba(223, 223, 223, 0.80);
+  font-family: Orbitron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 38px 0px 54px;
+}
+.pages__btn {
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+  padding: 11px 31px;
+  background-color: var(--button-color);
+}
+.pages__btn:hover {
+ background-color: white;
+ color: blue;
+ border: 2px solid blue;
+
+}
+
+@media (max-width:1070px) {
+  .pages__section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:470px) {
+  .pages__section {
+    flex-direction: column;
+  }
+  .ages__title {
+    font-size: 10px;
+  }
+  .pages__vidio{
+    width: 270px;
+  }
+}
+@media (max-width:470px) {
+  .pages__section {
+    flex-direction: column;
+  }
+
+  .ages__title {
+    font-size: 6px;
+  }
+
+  .pages__vidio {
+    width: 250px;
+  }
+} 

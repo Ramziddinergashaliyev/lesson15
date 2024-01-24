@@ -1,4 +1,14 @@
-      let modeBtn = document.getElementById("mode-btn");
+let modeBtn = document.getElementById("mode-btn");
+let navbar = document.getElementById("navbar");
+let backtop = document.getElementById("backtop");
+let navList = document.getElementById("navList");
+let barBtn = document.getElementById("nav__hamburger");
+
+
+
+     barBtn.addEventListener("click",function(){
+      navList.classList.toggle("show-nav__list")
+     })
 
       modeBtn.addEventListener("click", function () {
         if (document.body.className != "light") {
@@ -13,8 +23,6 @@
         shrink();
       });
 
-      let navbar = document.getElementById("navbar");
-
       function shrink() {
         if (scrollY > 1) {
           navbar.classList.add("navbar-shrink");
@@ -26,7 +34,6 @@
         toggleBacktop();
       });
 
-      let backtop = document.getElementById("backtop");
 
       function toggleBacktop() {
         if (
@@ -38,3 +45,5 @@
           backtop.classList.remove("backtop-show");
         }
       }
+
+      
