@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --primary-color: black;
+  --button-color: #57B8FF;
+  --container-width: 1240px;
+}
+
+.backtop {
+  position: fixed;
+  bottom: calc(-1 * var(--backtop-size));
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--backtop-size);
+  height: var(--backtop-size);
+  border-radius: 50%;
+  background-color: var(--button-color);
+  transition: 0.5s;
+  width: 50px;
+  height: 50px;
+}
+
+.backtop img {
+  width: 50%;
+}
+
+.backtop-show {
+  bottom: 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width:1440px) {
+  .container {
+    width: var(--container-width);
+  }
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  gap: 60px;
+}
+
+.nav__row {
+  padding-top: 20px;
+}
+
+.nav__btn {
+  gap: 20px;
+}
+
+.nav__link {
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.nav__link:hover {
+  color: yellow;
+}
+
+#navbar {
+  padding: 25px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar-shrink {
+  background: black;
+  box-shadow: 1px 0px 10px gray;
+  padding: 15px 0px !important;
+}
+
+#mode-btn {
+  background-color: transparent;
+}
+
+.light header{
+  background-color: white;
+}
+
+.light header * {
+  color: black;
+}
+
+.contact__btn {
+  width: 140px;
+  height: 48px;
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px 30px;
+  background: var(--button-color);
+  border-radius: 5px;
+}
+
+.contact__btn:hover {
+  background-color: white;
+  border: 2px solid var(--button-color);
+  color: black;
+}
+
+.nav__hamburger {
+  display: none;
+  cursor: pointer;
+  color: #FFF;
+}
+
+@media (max-width:950px) {
+  .nav__list {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: block;
+    color: #FFF;
+    width: 60px;
+    text-align: center;
+  }
+}
+
+@media (max-width:500px) {
+  .contact__btn {
+    display: none;
+  }
+}
+
+@media (max-width:420px) {
+  .nav__list {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: block;
+    color: #FFF;
+    width: 60px;
+    text-align: center;
+  }
+
+  .nav__img {
+    width: 120px;
+  }
+
+}
+
+#home {
+  display: flex;
+  padding-top: 200px;
+}
+
+.hero__left {
+  width: 50%;
+}
+
+.hero__right {
+  padding-bottom: 200px;
+}
+
+.hero__left__future {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__left__sport {
+  color: var(--button-color);
+  font-family: Orbitron;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.hero__left__title {
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 86px;
+  text-transform: capitalize;
+}
+
+.hero__left__text {
+  color: #999;
+  font-family: Orbitron;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.more__btn {
+  padding: 11px 34px;
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+  background: #57B8FF;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.more__btn:hover {
+  background-color: white;
+  border: 1px solid var(--button-color);
+  color: black;
+}
+
+.team__btn {
+  padding: 11px 34px;
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+  background: transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.team__btn:hover {
+  background-color: var(--button-color);
+  color: white;
+}
+
+@media (max-width:1050px) {
+
+  #home {
+    flex-direction: column;
+  }
+
+  .hero__right__img {
+    width: 600px;
+  }
+
+  .hero__left {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width:700px) {
+  #home {
+    flex-direction: column;
+  }
+
+  .hero__right__img {
+    width: 250px;
+  }
+
+  .hero__left__title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .more__btn,
+  .team__btn {
+    display: none;
+  }
+
+  .hero__left {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width:400px) {
+
+  .hero__right {
+    display: none;
+  }
+
+  .hero__left__title {
+    font-size: 26px;
+    line-height: 43px;
+  }
+
+  .more__btn,
+  .team__btn {
+    width: 120px;
+    height: 40px;
+    font-size: 10px;
+  }
+}
